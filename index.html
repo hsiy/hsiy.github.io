@@ -1,6 +1,15 @@
 <!doctype html>
 <html>
 <head>
+    <script language="JavaScript">
+        <!-- hide the script from old browsers --
+        //written by W.Moshammer
+        function PageLastUpdated(){
+            document.writeln("Last Updated: "+document.lastModified);
+        }
+        //--end hiding here -->
+    </script>
+
 	<link rel="shortcut icon" href="http://www.unomaha.edu/favicon.ico">
 	<link rel="stylesheet" href="css/vendor/fluidbox.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -32,14 +41,25 @@
     <div id="content">
         <section class="row">
             <div class="col">
-                <p><strong>Department of Computer Science</strong></p>
-                <p><strong>College of Information Science and Technology</strong></p>
-                <p><strong>University of Nebraska at Omaha</strong></p>
-                <img id="photo" src="img/hsiy.png" width='60%' height='60%'>
+                <img id="photo" src="img/hsiy5.jpg" width='50%' height='50%'>
             </div>
             <div class="col">
-                <p><strong>Bio</strong></p>
+                <p><strong><a href="http://cs.unomaha.edu">Department of Computer Science</a></strong></p>
+                <p><strong><a href="http://www.ist.unomaha.edu">College of Information Science and Technology</a></strong></p>
+                <p><strong><a href="http://www.unomaha.edu">University of Nebraska at Omaha</a></strong></p>
+                
+                <h2>Bio</h2>
                 <p>Harvey Siy is an Associate Professor in the Computer Science Department of UNO. His teaching and research interests are in software engineering. He received is Ph.D. in Computer Science from University of Maryland and spent 10 years in industry at Bell Labs-Lucent Technologies (now Nokia) before joining UNO in 2005.</p>
+                <p>For more details, please see my <a href="cv.pdf">vita</a>. </p>
+                
+                <p>
+                    <form method=GET action="http://www.unomaha.edu/search">
+                        <input type=hidden name=ie value=UTF-8>
+                        <input type=hidden name=oe value=UTF-8>
+                        <input type=text name=q size=20 maxlength=255 onfocus="if(this.value == 'Search UNO') { this.value = '' }" value="Search UNO">
+                    </form>
+                </p>
+
             </div>
         </section>
         <section class="row">
@@ -58,10 +78,24 @@
         </section>
         <section class="row">
             <div class="col-full">
-                Last updated: January 1, 2019
+                <script language="JavaScript"> {PageLastUpdated();} </script>
+
             </div>
         </section>
     </div>
+    
+    
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+	if (!window.jQuery)
+	{
+	    document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
+	}
+	</script>
+
+	<script src="js/vendor/jquery.fluidbox.min.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 </html>
 
