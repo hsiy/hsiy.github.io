@@ -218,8 +218,8 @@ body {
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  background-color: #181e44;
-  color: #ced9e0;
+  background-color: #fcfcfc;
+  color: #424242;
   font-family: Arial,sans-serif;
   font-size: 1em;
   line-height: 1.5;
@@ -270,7 +270,7 @@ a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  color: #ced9e0;
+  color: #424242;
   text-decoration: none;
 }
 a:hover {
@@ -322,7 +322,7 @@ body {
 }
 
 a {
-  border-bottom: 1px solid #ced9e0;
+  border-bottom: 1px solid #424242;
 }
 
 a:hover {
@@ -546,7 +546,7 @@ header nav ul li a.bordered {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  border-top: 2px solid #ced9e0;
+  border-top: 2px solid #424242;
   padding-top: 1em;
   padding-bottom: 3em;
 }
