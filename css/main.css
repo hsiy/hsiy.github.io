@@ -212,15 +212,15 @@ html {
 }
 
 body {
-  -webkit-font-feature-settings: "kern", "liga", "frac", "pnum";
-  -moz-font-feature-settings: "kern", "liga", "frac", "pnum";
-  -ms-font-feature-settings: "kern", "liga", "frac", "pnum";
-  font-feature-settings: "kern", "liga", "frac", "pnum";
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  background-color: #22272a;
+  background-color: #181e44;
   color: #ced9e0;
-  font-family: "font-family: " Helvetica Neue ",Helvetica,Arial,sans-serif";
+  font-family: Arial,sans-serif;
   font-size: 1em;
   line-height: 1.5;
 }
@@ -263,7 +263,7 @@ h6 {
 
 p {
   margin: 0 0 0.75em;
-  font-family: "font-family: " Helvetica Neue ",Helvetica,Arial,sans-serif";
+  font-family: sans-serif;
 }
 
 a {
