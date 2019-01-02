@@ -384,6 +384,7 @@ header #logo-container #logo {
   font-size: 48px;
   line-height: 60px;
   letter-spacing: -0.05em;
+  text-align: left;
   float: none;
 }
 header #logo-container #subtitle {
