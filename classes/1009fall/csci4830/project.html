@@ -1,0 +1,251 @@
+<HTML>
+<HEAD>
+<TITLE> CSCI 4830/8836 - Software Engineering Term Project Guidelines </TITLE>
+<link rel="stylesheet" href="/classes/css/style.css" type="text/css" />
+</HEAD>
+
+<body>
+
+<center>
+<b><font size=+1>Software Engineering Term Project Guidelines</font></b><br>
+Fall 2010<br>
+Updated: 10/20/2010
+</center>
+
+<h2>1. Introduction</h2>
+
+Real-world software development is different from the experience gained in most class programming projects. Requirements are often unclear and complex. No one can accomplish a fairly complex project singlehandedly. Systematic testing is vital. In the real world, one must work with the realization that the software produced will be used by, and maintained by, other people, hence usability and maintainability are important qualities. The purpose of the software engineering term project is to help you get a feel for real-world software development. Students will work together in teams of 4-6 members. 
+Students will be taking this project from problem definition to system test, applying basic software engineering processes. 
+<p>
+
+<i>You should understand that the project will require a significant commitment of your time from the beginning of the semester to the end. </i>
+
+<h3>1.1 Overall Objectives</h3>
+
+<ul>
+<li> Learn teamwork.
+<ul>
+<li> Task distribution, communication and coordination.
+</li><li> Learn to break down tasks and define responsibilities. 
+</li><li> Learn to use supporting tools for team collaboration.
+</li></ul>
+</li>
+
+<li> Apply problem definition techniques.
+<ul>
+<li> Learn to elicit and specify requirements.
+</li><li> Learn to use object-oriented analysis techniques. 
+</li></ul>
+</li>
+
+<li> Create solution systematically.
+<ul>
+<li> Learn to create design models. 
+</li><li> Develop implementation that is consistent with design.
+</li><li> Employ a version control system. 
+</li></ul>
+</li>
+
+<li> Gain experience with validation techniques.
+<ul>
+<li> Learn to conduct formal reviews and inspections.
+</li><li> Learn to plan tests early in the process.
+</li><li> Learn to use simple automated testing tools.
+</li></ul>
+</li></ul>
+
+<h2>2. Project Proposals</h2>
+
+Each team must come up with their own proposal for a term project. For this semester, the themes of the projects must be within the 8 areas outlined in the <a href="http://www.un.org/millenniumgoals/" target="_blank">United Nations Millenium Development Goals</a>:
+<ul>
+<li> End poverty and hunger
+<li> Universal education
+<li> Gender equality
+<li> Child health
+<li> Maternal health
+<li> Combat HIV/AIDS
+<li> Environmental sustainability
+<li> Global partnership
+</ul>
+
+Any nontrivial project that is relevant to one or more of these areas can be considered. (Note that these are the same themes used by Microsoft's <a href="http://www.imaginecup.us/Competitions/softwaredesign" target="_blank">Imagine Cup Software Design Competition</a>. See <a href="http://imaginecup.com/about" target="_blank">http://imaginecup.com/about</a> for more information on the Imagine Cup.)
+
+<p>
+
+The project proposal is to be written up as a problem statement. This statement will be reviewed and the proposal may be modified in order to fit within the time constraints of a semester-long project.
+
+
+<h2>3. Working Together</h2>
+
+Students will be asked to self-organize into teams consisting of 4-6 members. 
+
+<h3>3.1 Grading Policy</h3>
+
+Each member of the team is expected to contribute equally to the project. <b>Note that project grades will be given on an individual basis.</b> In other words, if one person does not contribute substantially to the project, his/her grade will be significantly reduced. Weekly logs (see Section 4.2) and peer opinions will be the primary sources of information for assessing individual contributions to the project. If there is a clear discrepancy in individual contributions, individual project grades will be adjusted accordingly.
+
+<h3>3.2 Team Roles</h3>
+
+While I do not require any particular team structure, each team must appoint a leader who will coordinate the distribution and assignment of work and serve as the point of contact. 
+
+<h3>3.3 Collaboration Tools</h3>
+
+Our experience has shown that some CSCI 4830 projects fail because the teams were unable to make progress due to teamwork issues (unable to find common meeting time, unable to agree on ways of communicating decisions and tasks, etc.). To mitigate this, you are required to make use of available technology for supporting software development among teams. A commonly suggested tool is <i>Trac</i> (<a href="http://trac.edgewall.org/">http://trac.edgewall.org</a>). We are also piloting another collaboration tool, IBM's <i>Rational Team Concert</i> (<a href="http://jazz.net">http://jazz.net</a>). You are free to choose either one for your collaboration needs. At the end of the semester, we will ask for your feedback on the usability of these tools through a set of questionnaires. <i>Some of this feedback may be used in an ongoing research study on developer collaboration.</i>
+
+<h3>3.4 Tips</h3> 
+
+While there is no magic formula for successful teamwork, the following are helpful tips from my observations of successful teams in the past. 
+<ul> 
+<li> Set up a regular team meeting. Take notes during the team meeting and post them. At the end of the meeting, make sure that each member is clear about his or her work items.
+<li> Assign work items to individuals. Work items that are assigned to two or more members usually end up being completed by one person, or worse, not done at all.
+<li> Record work items as "tickets" in Trac or as "work items" in RTC. In this way, it should be possible for me to get an idea of each person's to-do list at any given time.
+<li> In the meeting notes, record who were in attendance and who were not. A few absences can be tolerated, especially if there is some excuse (preferrably given ahead of time). 
+<li> Nonresponsive teammates disrupt the smooth functioning of the team and can wreak havoc on the morale of the team. Refer nonresponsive teammates to me. These include but are not limited to, (a) those chronically absent (3 or more times) with no excuse, (b) those who repeatedly fail to respond to queries, (c) those who continually neglect their work items.
+<li> As much as possible, sit together in class. This fosters camaraderie and friendships.
+</ul>
+
+<h2>4. Project Artifacts To Be Submitted</h2>
+
+These are the artifacts that should be submitted. Examples and templates will be provided later.
+
+<table border="1">
+<tr><th>Artifact
+</th><th>Percentage<br>(Tentative)</th></tr>
+
+<tr><td>
+
+Requirements
+<br>
+- Requirements specification document
+</td><td align="center"> 20%</td></tr>
+
+<tr><td>
+Design
+<br>
+- Design document
+</td><td align="center"> 20%</td></tr>
+<tr><td>
+Implementation
+<br>
+- Source code<br>
+- Version control repository
+</td><td align="center"> 
+35%</td></tr>
+
+<tr><td>
+
+Verification &amp; Validation
+<br>
+- Test plan<br>
+- Test scripts<br>
+- System test summaries
+</td><td align="center"> 15%</td></tr>
+
+<tr><td>
+
+Management
+<br>
+- Project plan<br>
+- (Weekly logs)<br>
+- Work item assignments<br>
+- Post-mortem report
+</td><td align="center"> 10%</td></tr>
+</table>
+
+<h3>4.1 Notes on Version Control Repository</h3>
+
+Source code for the project must be version-controlled, i.e., modifications should be saved using a version control repository such as CVS or Subversion throughout code development. Version control support is also available through Rational Team Concert. This repository is part of the final project submission.
+
+<h3>4.2 Notes on Weekly Logs</h3>
+
+When your team proposal has been approved, each team member must record every week a log of his/her activities contributing towards the project. 
+
+The tasks should be brief and specific. Examples:
+<ul>
+
+<li> Wrote use cases for the requirement querying functionality.
+</li><li> Working on object model: (list of objects) 
+</li><li> Updated issues list.
+</li><li> Modified file.c and checked into CVS.
+</li><li> Met with team. See posted meeting notes.
+</li><li> Could not make progress because of ...
+</li></ul>
+
+I will share a Google Docs spreadsheet template for recording the logs.
+
+
+<h2>5. Major Deadlines:</h2>
+
+<table border="1">
+<tbody><tr><th>Date</th><th>
+Deliverable</th><th>
+Nature of Feedback</th></tr>
+
+<tr><td align="center">
+8/30
+</td><td>
+Team composition + initial project ideas</td><td>
+Verbal approval</td></tr>
+
+<tr><td align="center">
+9/8
+</td><td>
+Problem Statement</td><td>
+Written comments</td></tr>
+
+<tr><td align="center">
+<strike>9/13</strike> 9/20
+</td><td>
+Initial Project Plan</td><td>
+Written comments</td></tr>
+
+<tr><td align="center">
+<strike>9/27</strike> 10/4
+</td><td>
+Proof-of-concept or working prototype or paper prototype</td><td>
+Written comments</td></tr>
+
+<tr><td align="center">
+<strike>10/8</strike> 10/15
+</td><td>
+Initial Requirements Specification Document </td><td>
+Written comments</td></tr>
+
+<tr><td align="center">
+<strike>10/25</strike> 11/1
+</td><td>
+Initial Design Document <strike>&amp; Test Plan</strike>
+</td><td>Written comments</td></tr>
+
+<tr><td align="center">
+11/8
+</td><td>
+Initial Test Plan
+</td><td>Written comments</td></tr>
+
+<tr><td align="center">
+<strike>11/15</strike> 11/22
+</td><td>
+Partially working code + unit test scripts + test summaries</td><td>
+Written comments</td></tr>
+
+<tr><td align="center">
+12/10
+</td>
+<td>Final Submission (all project artifacts)</td>
+<td>Grade</td></tr>
+</tbody></table>
+
+<h3>5.1 Notes</h3>
+
+<ul>
+<li> Note that these are basic deadlines for every team. Each team is free to add more internal deadlines, as long as these dates are respected.
+</li><li> An acceptable version of each project artifact must be submitted by the deadlines above. Late or incomplete submissions will get a 1-point per day deduction from the final grade. 
+
+</li><li> If you are unsure whether your submission would be acceptable or not, please come and talk to me, <i>before the deadline</i>.
+</li><li> When I provide feedback on a submitted deliverable, it is expected that the feedback should be incorporated into a revised version of the deliverable and resubmitted for re-review. <i>Expect to make multiple revisions, especially for the requirements and design documents.</i> 
+</li><li> When resubmitting a deliverable, include a brief item-by-item explanation how each of my comments were addressed.
+</li><li> Notice that the prototype is not graded. The purpose of the prototype is to clarify the requirements of the project. Also, if you are working with unfamiliar technology, working on the prototype can help you understand the capabilities and limitations of the new technology.
+</li></ul>
+
+</body>
+</html>
