@@ -633,7 +633,12 @@ header nav ul li a.bordered {
     width: calc(50% - 7px);
   }
 }
-
+.center-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .loaded header {
   -webkit-transform: none;
   -moz-transform: none;
